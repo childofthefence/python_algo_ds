@@ -5,7 +5,7 @@ from hashlib import blake2b
 base_url = 'http://xurl.com/'
 
 
-def create_mikeurl(starting_url):
+def create_xurl(starting_url):
 	
 	while True:
 		
@@ -41,9 +41,6 @@ def create_mikeurl(starting_url):
 			
 			print("Something went wrong")
 			break
-		
-		# http://www.facebook.com/whateverthisis/_everyotherhtmlfile
-		# http://mikeurl.com/f51e5eb9522bc1e6
 	
 	
 starting_url = 'http://www.facebook.com'
