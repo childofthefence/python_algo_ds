@@ -11,12 +11,13 @@ def create_mikeurl(starting_url):
 		
 		try:
 			
-			if len(starting_url) > 35:
+			if len(starting_url) > 35: # check to make sure the url is actually longer than the mikeurl will be
 			
 				large_url = starting_url
 				
 			else:
 				
+				print('\nThe starting url is pretty short, not going to do anything to it\n')
 				return starting_url
 		
 			large_url = bytes(large_url, 'UTF-8')
@@ -34,4 +35,5 @@ def create_mikeurl(starting_url):
 		# http://mikeurl.com/f51e5eb9522bc1e6
 	
 	
-print(create_mikeurl('http://www.facebook.com/whateverthisis/_everyotherhtmlfile'))
+starting_url = input('Please enter the url to shorten: ')
+print('Starting url: {}'.format(starting_url) + '\nNew, shorter url {}'.format(create_mikeurl(starting_url)))
