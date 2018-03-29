@@ -2,7 +2,8 @@ import unittest
 
 from valid_number import ValidNumber
 
-class Test_Valid_Number(unittest.TestCase):
+
+class TestValidNumber(unittest.TestCase):
 	
 	def setUp(self):
 		pass
